@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity.ui.ViewProfileFragment">
+    <include
+        android:id="@+id/appbarIncluded"
+        layout="@layout/appbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_doctor"
+        app:civ_border_color="@color/red_primary"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbarIncluded" />
+
+    <TextView
+        android:id="@+id/update_profile_picture_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/border_radius"
+        android:backgroundTint="@color/red_primary"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="6dp"
+        android:textAlignment="center"
+
+
+        android:text="update picture"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+
+
+        android:layout_marginTop="32dp"
+        android:text="Tanvir Ahmmad"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/red_primary"
+        app:layout_constraintEnd_toEndOf="@+id/profile_image"
+        app:layout_constraintStart_toStartOf="@+id/profile_image"
+        app:layout_constraintTop_toBottomOf="@+id/update_profile_picture_btn" />
+
+    <TextView
+        android:id="@+id/profile_label_date_of_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="Date Of Birth :"
+        app:layout_constraintEnd_toStartOf="@+id/profile_date_of_birth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+    <TextView
+        android:id="@+id/profile_label_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="8dp"
+        android:text="Phone :"
+        app:layout_constraintStart_toStartOf="@+id/profile_label_date_of_birth"
+        app:layout_constraintTop_toBottomOf="@+id/profile_label_date_of_birth" />
+
+    <TextView
+        android:id="@+id/profile_label_Blood_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="8dp"
+        android:text="Blood Gorup :"
+        app:layout_constraintStart_toStartOf="@+id/profile_label_date_of_birth"
+        app:layout_constraintTop_toBottomOf="@+id/profile_label_phone" />
+
+
+    <TextView
+        android:id="@+id/profile_date_of_birth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="23-07-1998"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_label_date_of_birth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/profile_label_date_of_birth"
+        app:layout_constraintTop_toTopOf="@+id/profile_label_date_of_birth" />
+
+    <TextView
+        android:id="@+id/profile_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginEnd="16dp"
+        android:text="01708924486"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_label_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profile_date_of_birth"
+        app:layout_constraintTop_toTopOf="@+id/profile_label_phone" />
+
+    <TextView
+        android:id="@+id/profile_Blood_group"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginEnd="16dp"
+        android:text="AB+"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_label_Blood_group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/profile_date_of_birth"
+        app:layout_constraintTop_toTopOf="@+id/profile_label_Blood_group" />
+
+    <Button
+        android:id="@+id/profile_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:minWidth="200dp"
+
+        android:text="Update Profile"
+        app:layout_constraintBottom_toTopOf="@+id/profile_log_out"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Blood_group"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <Button
+        android:id="@+id/profile_log_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:minWidth="200dp"
+
+        android:text="Log Out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

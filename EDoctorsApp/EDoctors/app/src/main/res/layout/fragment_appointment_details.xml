@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.ui.appointments.AppointmentDetailsFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/tv_chamber_header"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Appointment"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColor="@color/red_primary"
+
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_chamber_doctor_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icon_doctor"
+        app:civ_border_color="@color/red_primary"
+
+
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_chamber_doctor_qualification"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_chamber_doctor_name" />
+
+
+    <TextView
+        android:id="@+id/tv_chamber_doctor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Md.Tanvir Ahmmad"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/red_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_chamber_doctor_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chamber_header" />
+
+    <TextView
+        android:id="@+id/tv_chamber_doctor_designation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Medical Officer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_chamber_doctor_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chamber_doctor_name" />
+
+    <TextView
+        android:id="@+id/tv_chamber_doctor_qualification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="MBBS,FCPS (Dhaka Medical College)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_chamber_doctor_designation"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chamber_doctor_designation" />
+
+    <TextView
+        android:id="@+id/tv_chamber_current_serial_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:textStyle="bold"
+        android:textColor="@color/red_primary"
+        android:text="Current serial : "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_chamber_doctor_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chamber_doctor_qualification" />
+
+    <TextView
+        android:id="@+id/tv_chamber_current_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="..."
+        android:textColor="@color/red_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_chamber_current_serial_label"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chamber_live_update"
+        app:layout_constraintStart_toStartOf="@+id/mf_progress_bar"
+        app:layout_constraintTop_toTopOf="@+id/tv_chamber_current_serial_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_chamber_live_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Live"
+        android:textColor="@color/red_primary"
+        android:textSize="11sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_chamber_current_serial_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chamber_current_serial" />
+
+    <ProgressBar
+        android:id="@+id/mf_progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+
+        app:layout_constraintEnd_toEndOf="@+id/tv_chamber_live_update"
+        app:layout_constraintStart_toStartOf="@+id/tv_chamber_live_update"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chamber_live_update" />
+
+    <TextView
+        android:id="@+id/tv_chamber_user_serial_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Your serial : "
+        android:textColor="@color/red_primary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/iv_chamber_doctor_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chamber_live_update" />
+
+    <TextView
+        android:id="@+id/tv_chamber_user_serial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="103"
+        android:textColor="@color/red_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_chamber_user_serial_label"
+        app:layout_constraintEnd_toEndOf="@+id/tv_chamber_live_update"
+        app:layout_constraintStart_toStartOf="@+id/tv_chamber_live_update"
+        app:layout_constraintTop_toTopOf="@+id/tv_chamber_user_serial_label" />
+
+    <Button
+        android:id="@+id/joinBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:text="Join"
+
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chamber_user_serial_label"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/prescriptionTitle"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Prescription"
+
+        android:textColor="@color/red_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/joinBtn" />
+
+
+    <LinearLayout
+        android:id="@+id/prescription_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:weightSum="6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prescriptionTitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp"
+
+            android:text="Medicine"
+            android:textColor="@color/red_primary"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp"
+            android:text="M"
+            android:textColor="@color/red_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp"
+            android:text="D"
+            android:textColor="@color/red_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp"
+            android:text="N"
+            android:textColor="@color/red_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_horizontal"
+            android:paddingVertical="8dp"
+            android:text="Days"
+            android:textColor="@color/red_primary" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_prescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:nestedScrollingEnabled="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/prescription_layout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_add_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Add Review"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_prescription" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

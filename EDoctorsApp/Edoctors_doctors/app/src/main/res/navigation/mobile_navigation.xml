@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/navigation_home"
+    android:id="@+id/mobile_navigation.xml">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.incubationlab.edoctors_doctors.Main.ui.Dashboard.DashboardFragment"
+        android:label="Home"
+        />
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.incubationlab.edoctors_doctors.Main.ui.Settings.SettingsFragment"
+        android:label="Settings"
+        />
+    <fragment
+        android:id="@+id/navigation_health_blogs"
+        android:name="com.incubationlab.edoctors_doctors.Main.ui.HealthBlogs.HealthBlogsFragment"
+        android:label="Health Blogs"
+        >
+        <action
+            android:id="@+id/action_navigation_health_blogs_to_navigation_add_blog"
+            app:destination="@id/navigation_add_blog" />
+        <action
+            android:id="@+id/action_navigation_health_blogs_to_navigation_blog_details"
+            app:destination="@id/navigation_blog_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_Profile"
+        android:name="com.incubationlab.edoctors_doctors.Main.ui.Profile.ProfileFragment"
+        android:label="Profile"
+        />
+    <fragment
+        android:id="@+id/navigation_appointments"
+        android:name="com.incubationlab.edoctors_doctors.Main.ui.Appointments.AppointmentsFragment"
+        android:label="Appointments"
+        >
+        <action
+            android:id="@+id/action_navigation_appointments_to_navigation_appointment_details"
+            app:destination="@id/navigation_appointment_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_appointment_details"
+        android:name="com.incubationlab.edoctors_doctors.Main.ui.Appointments.AppointmentDetailsFragment"
+        android:label="Appointment Details"
+        />
+    <fragment
+        android:id="@+id/navigation_add_blog"
+        android:name="com.incubationlab.edoctors_doctors.Main.ui.HealthBlogs.AddNewBlogFragment"
+        android:label="Add Blog"
+        />
+    <fragment
+        android:id="@+id/navigation_blog_details"
+        android:name="com.incubationlab.edoctors_doctors.Main.ui.HealthBlogs.BlogDetailsFragment"
+        android:label="Add Blog"
+        >
+        <action
+            android:id="@+id/action_navigation_blog_details_to_navigation_add_blog"
+            app:destination="@id/navigation_add_blog" />
+    </fragment>
+
+</navigation>

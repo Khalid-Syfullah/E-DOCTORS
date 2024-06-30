@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.incubation_lab.edoctors.MainActivity.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_profile"
+            app:destination="@id/navigation_profile"
+            app:popUpTo="@id/navigation_home" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_blog_detail"
+            app:destination="@id/navigation_blog_detail" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_doctors"
+            app:destination="@id/navigation_doctors" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_doctor_profile"
+            app:destination="@id/navigation_doctor_profile" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_health_blogs"
+            app:destination="@id/navigation_health_blogs" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_health_blogs"
+        android:name="com.incubation_lab.edoctors.MainActivity.ui.health_blogs.HealthBlogsFragment"
+        android:label="@string/title_health_blogs"
+        tools:layout="@layout/fragment_health_blogs" >
+        <action
+            android:id="@+id/action_navigation_health_blogs_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_health_blogs_to_navigation_blog_detail"
+            app:destination="@id/navigation_blog_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_appointments"
+        android:name="com.incubation_lab.edoctors.MainActivity.ui.appointments.AppointmentsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_appointments" >
+        <action
+            android:id="@+id/action_navigation_notifications_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_appointments_to_navigation_appointment_details"
+            app:destination="@id/navigation_appointment_details" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_doctors"
+        android:name="com.incubation_lab.edoctors.MainActivity.ui.doctors.DoctorsFragment"
+        android:label="@string/title_doctors"
+        tools:layout="@layout/fragment_doctors" >
+        <action
+            android:id="@+id/action_navigation_doctors_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_navigation_doctors_to_navigation_doctor_profile"
+            app:destination="@id/navigation_doctor_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_med_reminder"
+        android:name="com.incubation_lab.edoctors.MainActivity.ui.medicine_reminder.MedicineReminderFragment"
+        android:label="@string/title_doctors"
+        tools:layout="@layout/fragment_medicine_reminder" >
+        <action
+            android:id="@+id/action_navigation_med_reminder_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.incubation_lab.edoctors.MainActivity.ui.ViewProfileFragment"
+
+        tools:layout="@layout/fragment_view_profile" />
+    <fragment
+        android:id="@+id/navigation_doctor_profile"
+        android:name="com.incubation_lab.edoctors.MainActivity.ui.doctors.ViewDoctorProfileFragment"
+
+        tools:layout="@layout/fragment_view_doctor_profile" />
+    <fragment
+        android:id="@+id/navigation_appointment_details"
+        android:name="com.incubation_lab.edoctors.MainActivity.ui.appointments.AppointmentDetailsFragment"
+
+        tools:layout="@layout/fragment_appointment_details" />
+    <fragment
+        android:id="@+id/navigation_blog_detail"
+        android:name="com.incubation_lab.edoctors.MainActivity.ui.health_blogs.BlogDetailsFragment"
+
+        tools:layout="@layout/fragment_blog_details" />
+</navigation>

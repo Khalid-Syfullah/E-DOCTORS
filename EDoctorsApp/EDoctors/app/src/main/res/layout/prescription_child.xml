@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:weightSum="6"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/prescriptionTitle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id = "@+id/pres_child_med_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        
+        android:gravity="center_horizontal"
+        android:textAlignment="gravity"
+        android:padding="8dp"
+
+        android:text="Medicine"
+        android:textColor="@color/red_primary"
+
+        />
+
+    <TextView
+        android:id = "@+id/pres_child_qty_morning"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center_horizontal"
+        android:textAlignment="gravity"
+
+        android:padding="8dp"
+        android:text="M"
+        android:textColor="@color/red_primary" />
+
+    <TextView
+        android:id = "@+id/pres_child_qty_day"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center_horizontal"
+        android:textAlignment="gravity"
+
+        android:padding="8dp"
+        android:text="D"
+        android:textColor="@color/red_primary" />
+
+    <TextView
+        android:id = "@+id/pres_child_qty_night"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center_horizontal"
+        android:textAlignment="gravity"
+
+        android:padding="8dp"
+        android:text="N"
+        android:textColor="@color/red_primary" />
+
+    <TextView
+        android:id = "@+id/pres_child_course_days"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        
+        android:gravity="center_horizontal"
+        android:textAlignment="gravity"
+
+        android:padding="8dp"
+        android:text="Days"
+        android:textColor="@color/red_primary" />
+</LinearLayout>

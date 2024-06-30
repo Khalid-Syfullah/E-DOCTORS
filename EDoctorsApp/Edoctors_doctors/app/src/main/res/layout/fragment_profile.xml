@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Main.ui.Profile.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/icon_doctor"
+            app:civ_border_color="@color/red_primary"
+            app:civ_border_width="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/update_profile_picture_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/border_radius"
+            android:backgroundTint="@color/red_primary"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="6dp"
+            android:text="update picture"
+
+
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/profile_image"
+            app:layout_constraintStart_toStartOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <TextView
+            android:id="@+id/profile_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+
+
+            android:layout_marginTop="32dp"
+            android:text="Tanvir Ahmmad"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/red_primary"
+            app:layout_constraintEnd_toEndOf="@+id/profile_image"
+            app:layout_constraintStart_toStartOf="@+id/profile_image"
+            app:layout_constraintTop_toBottomOf="@+id/update_profile_picture_btn" />
+
+        <TextView
+            android:id="@+id/tv_label_firstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="First Name"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileFirstName"
+            app:layout_constraintEnd_toStartOf="@+id/tvProfileFirstName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_labelProfileQualifications"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileFirstName" />
+
+        <TextView
+            android:id="@+id/tvProfileFirstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="Tanvir"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_labelProfileQualifications"
+            app:layout_constraintTop_toBottomOf="@+id/profile_username" />
+
+        <ImageView
+            android:id="@+id/ivFirstNameEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileFirstName"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileFirstName"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileFirstName" />
+
+        <TextView
+            android:id="@+id/tvProfile_label_lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name :"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileLastName"
+            app:layout_constraintEnd_toStartOf="@+id/tvProfileLastName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_labelProfileQualifications"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileLastName" />
+
+
+        <TextView
+            android:id="@+id/tvProfileLastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_vertical"
+
+            android:padding="8dp"
+            android:text="Ahmmad"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileFirstName"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileFirstName" />
+
+        <ImageView
+            android:id="@+id/ivLastNameEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileLastName"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileLastName"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileLastName" />
+
+        <TextView
+            android:id="@+id/tv_labelProfileBmdc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginEnd="10dp"
+            android:text="BMDC :"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileBmdc"
+            app:layout_constraintEnd_toStartOf="@+id/tvProfileBmdc"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_labelProfileQualifications"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileBmdc" />
+
+        <TextView
+            android:id="@+id/tvProfileBmdc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="12345"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileLastName" />
+
+        <ImageView
+            android:id="@+id/ivBmdcEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileBmdc"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileBmdc"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileBmdc" />
+
+        <TextView
+            android:id="@+id/tv_labelProfileSpeciality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Speciality :"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileSpeciality"
+            app:layout_constraintEnd_toStartOf="@+id/tvProfileSpeciality"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_labelProfileQualifications"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileSpeciality" />
+
+        <TextView
+            android:id="@+id/tvProfileSpeciality"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="Corona Specialist"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileBmdc" />
+
+        <ImageView
+            android:id="@+id/ivSpecialityEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileSpeciality"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileSpeciality"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileSpeciality" />
+
+        <TextView
+            android:id="@+id/tv_labelProfileDesignation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Designation :"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileDesignation"
+            app:layout_constraintEnd_toStartOf="@+id/tvProfileDesignation"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_labelProfileQualifications"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileDesignation" />
+
+        <TextView
+            android:id="@+id/tvProfileDesignation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="Medical Officer"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileSpeciality" />
+
+        <ImageView
+            android:id="@+id/ivDesignationEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileDesignation"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileDesignation"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileDesignation" />
+
+        <TextView
+            android:id="@+id/tv_labelProfileQualifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="16dp"
+            android:text="Qualifications :"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileQualifications"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileQualifications" />
+
+        <TextView
+            android:id="@+id/tvProfileQualifications"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="MBBS, RMC"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileDesignation" />
+
+        <ImageView
+            android:id="@+id/ivQualificationsEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileQualifications"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileQualifications"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileQualifications" />
+
+        <TextView
+            android:id="@+id/tv_labelProfileBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text="Bio :"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileBio"
+            app:layout_constraintEnd_toStartOf="@+id/tvProfileBio"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_labelProfileQualifications"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileBio" />
+
+        <TextView
+            android:id="@+id/tvProfileBio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="Here is Bio"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileQualifications" />
+
+        <ImageView
+            android:id="@+id/ivBioEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfileBio"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfileBio"
+            app:layout_constraintTop_toTopOf="@+id/tvProfileBio" />
+
+        <TextView
+            android:id="@+id/tv_labelProfilePhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginEnd="10dp"
+            android:text="Speciality :"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfilePhone"
+            app:layout_constraintEnd_toStartOf="@+id/tvProfilePhone"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tv_labelProfileQualifications"
+            app:layout_constraintTop_toTopOf="@+id/tvProfilePhone" />
+
+        <TextView
+            android:id="@+id/tvProfilePhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/tv_box_background"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="01708924486"
+            android:textAlignment="gravity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/tvProfileFirstName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfileBio" />
+
+        <ImageView
+            android:id="@+id/ivPhoneEdit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+
+            android:src="@drawable/edit"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProfilePhone"
+            app:layout_constraintEnd_toEndOf="@+id/tvProfilePhone"
+            app:layout_constraintTop_toTopOf="@+id/tvProfilePhone" />
+
+        <Button
+            android:id="@+id/profile_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="32dp"
+            android:minWidth="200dp"
+            android:text="Update Profile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfilePhone" />
+
+        <Button
+            android:id="@+id/profile_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+
+            android:minWidth="200dp"
+            android:text="Log Out"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_update" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

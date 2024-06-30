@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.ui.Appointments.AppointmentDetailsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_chamber_header"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Appointment"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/red_primary"
+
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/appointment_details_patient_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/icon_doctor"
+            app:civ_border_color="@color/red_primary"
+
+
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/appointment_details_patient_gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/appointment_details_patient_name" />
+
+
+        <TextView
+            android:id="@+id/appointment_details_patient_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:text="Md.Tanvir Ahmmad"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/red_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appointment_details_patient_image"
+            app:layout_constraintTop_toBottomOf="@+id/tv_chamber_header" />
+
+        <TextView
+            android:id="@+id/appointment_details_patient_age"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+
+            android:text="26"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/appointment_details_patient_gender"
+            app:layout_constraintTop_toBottomOf="@+id/appointment_details_patient_gender" />
+
+        <TextView
+            android:id="@+id/appointment_details_patient_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="Male"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appointment_details_patient_gender_label"
+            app:layout_constraintTop_toBottomOf="@+id/appointment_details_patient_name" />
+
+        <TextView
+            android:id="@+id/appointment_details_patient_gender_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Gender : "
+            app:layout_constraintBottom_toBottomOf="@+id/appointment_details_patient_gender"
+            app:layout_constraintStart_toStartOf="@+id/appointment_details_patient_name"
+            app:layout_constraintTop_toTopOf="@+id/appointment_details_patient_gender" />
+
+        <TextView
+            android:id="@+id/appointment_details_patient_age_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Age : "
+            app:layout_constraintBottom_toBottomOf="@+id/appointment_details_patient_age"
+            app:layout_constraintStart_toStartOf="@+id/appointment_details_patient_name"
+            app:layout_constraintTop_toTopOf="@+id/appointment_details_patient_age" />
+
+        <TextView
+            android:id="@+id/appointment_details_appointment_date_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:text="Date : "
+            app:layout_constraintStart_toStartOf="@+id/appointment_details_patient_age_label"
+            app:layout_constraintTop_toBottomOf="@+id/appointment_details_patient_age" />
+
+        <TextView
+            android:id="@+id/appointment_details_appointment_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="8dp"
+            android:text="16-09-2021"
+            android:textColor="@color/red_primary"
+            app:layout_constraintBottom_toBottomOf="@+id/appointment_details_appointment_date_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/appointment_details_patient_age"
+            app:layout_constraintTop_toTopOf="@+id/appointment_details_appointment_date_label" />
+
+        <TextView
+            android:id="@+id/appointment_details_appointment_serial_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Serial : "
+            app:layout_constraintStart_toStartOf="@+id/appointment_details_appointment_date_label"
+            app:layout_constraintTop_toBottomOf="@+id/appointment_details_appointment_date_label" />
+
+        <TextView
+            android:id="@+id/appointment_details_appointment_serial"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginEnd="8dp"
+            android:text="16"
+            android:textColor="@color/red_primary"
+            app:layout_constraintBottom_toBottomOf="@+id/appointment_details_appointment_serial_label"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/appointment_details_appointment_date"
+            app:layout_constraintTop_toTopOf="@+id/appointment_details_appointment_serial_label" />
+
+
+        <Button
+            android:id="@+id/joinBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+
+            android:text="Join"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appointment_details_appointment_serial" />
+
+        <TextView
+            android:id="@+id/prescriptionTitle"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Prescription"
+
+            android:textColor="@color/red_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/joinBtn" />
+
+
+        <LinearLayout
+            android:id="@+id/prescription_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:weightSum="6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prescriptionTitle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/tv_box_background"
+                android:gravity="center_horizontal"
+                android:paddingVertical="8dp"
+
+                android:text="Medicine"
+                android:textColor="@color/red_primary"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_box_background"
+                android:gravity="center_horizontal"
+                android:paddingVertical="8dp"
+                android:text="M"
+                android:textColor="@color/red_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_box_background"
+                android:gravity="center_horizontal"
+                android:paddingVertical="8dp"
+                android:text="D"
+                android:textColor="@color/red_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_box_background"
+                android:gravity="center_horizontal"
+                android:paddingVertical="8dp"
+                android:text="N"
+                android:textColor="@color/red_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/tv_box_background"
+                android:gravity="center_horizontal"
+                android:paddingVertical="8dp"
+                android:text="Days"
+                android:textColor="@color/red_primary" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_prescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prescription_layout" />
+
+        <TextView
+            android:id="@+id/tv_med_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Medicine Name"
+            android:textColor="@color/red_primary"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv_prescription" />
+
+        <EditText
+            android:id="@+id/et_med_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Enter medicine Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_med_name_label" />
+
+        <TextView
+            android:id="@+id/tv_routine_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:text="Routine(Quantity to take in morning day and night)"
+            android:textColor="@color/red_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_med_name" />
+
+        <EditText
+            android:id="@+id/et_med_routine_morning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="morning"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/et_med_routine_day"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_routine_label" />
+
+        <EditText
+            android:id="@+id/et_med_routine_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="mid day"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/et_med_routine_night"
+            app:layout_constraintStart_toEndOf="@+id/et_med_routine_morning"
+            app:layout_constraintTop_toBottomOf="@+id/tv_routine_label" />
+
+        <EditText
+            android:id="@+id/et_med_routine_night"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="night"
+            android:inputType="number"
+            android:maxLength="1"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/et_med_routine_course_time"
+            app:layout_constraintStart_toEndOf="@+id/et_med_routine_day"
+            app:layout_constraintTop_toBottomOf="@+id/tv_routine_label" />
+
+        <EditText
+            android:id="@+id/et_med_routine_course_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="duration(days)"
+            android:inputType="number"
+            android:maxLength="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/et_med_routine_night"
+            app:layout_constraintTop_toBottomOf="@+id/tv_routine_label" />
+
+        <Button
+            android:id="@+id/btn_add_medicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Add Medicine"
+            app:layout_constraintEnd_toEndOf="@+id/et_med_routine_course_time"
+            app:layout_constraintStart_toStartOf="@+id/et_med_routine_morning"
+            app:layout_constraintTop_toBottomOf="@+id/et_med_routine_day" />
+
+        <Button
+            android:id="@+id/btn_prescription_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:text="Upload Prescription"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_med_routine_course_time"
+            app:layout_constraintStart_toStartOf="@+id/et_med_routine_morning"
+            app:layout_constraintTop_toBottomOf="@+id/btn_add_medicine" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

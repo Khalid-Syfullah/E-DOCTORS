@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.incubation_lab.edoctors" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_red"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_red"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EDoctors"
+        android:usesCleartextTraffic="true" >
+        <activity android:name=".MainActivity.MainActivity" />
+        <activity
+            android:name=".Login.LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".Splash.SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Doctors.DoctorLoginActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".Doctors.AppointmentListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Doctors.VideoActivity"
+            android:exported="true" />
+
+        <receiver android:name=".MainActivity.ui.medicine_reminder.MedReminderBrdCstReceiver" />
+    </application>
+
+</manifest>

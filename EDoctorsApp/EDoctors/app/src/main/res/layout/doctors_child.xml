@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    android:layout_margin="8dp"
+
+
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_online"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:elevation="10dp"
+            android:src="@drawable/ic_online"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_image"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_image"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/doctor_image"
+            app:layout_constraintTop_toTopOf="@+id/doctor_image"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctor_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/icon_doctor"
+            app:civ_border_color="@color/red_primary"
+
+
+            app:civ_border_width="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_qualification"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/doctor_name" />
+
+
+        <TextView
+            android:id="@+id/doctor_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:text="Md.Tanvir Ahmmad"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/red_primary"
+            app:layout_constraintEnd_toStartOf="@+id/doctor_fee"
+            app:layout_constraintStart_toEndOf="@+id/doctor_image"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/doctor_designation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="4dp"
+            android:text="Medical Officer"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_name"
+            app:layout_constraintStart_toStartOf="@+id/doctor_name"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_name" />
+
+        <TextView
+            android:id="@+id/doctor_qualification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="4dp"
+            android:text="MBBS,FCPS (Dhaka Medical College)"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_designation"
+            app:layout_constraintStart_toStartOf="@+id/doctor_designation"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_designation" />
+
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="4.5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_qualification"
+            app:layout_constraintEnd_toStartOf="@+id/doctors_ratingBar"
+            app:layout_constraintStart_toStartOf="@+id/doctor_fee"
+            app:layout_constraintTop_toBottomOf="@+id/doctor_fee" />
+
+        <RatingBar
+            android:id="@+id/doctors_ratingBar"
+            style="?attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="1"
+            android:rating="3.5"
+
+            android:stepSize=".01"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_rating"
+            app:layout_constraintEnd_toEndOf="@+id/doctor_fee"
+            app:layout_constraintStart_toEndOf="@+id/tv_rating"
+            app:layout_constraintTop_toTopOf="@+id/tv_rating" />
+
+        <TextView
+            android:id="@+id/doctor_fee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="500 Tk"
+            app:layout_constraintBottom_toBottomOf="@+id/doctor_qualification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/doctor_name"
+            app:layout_constraintVertical_bias="0.100000024" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

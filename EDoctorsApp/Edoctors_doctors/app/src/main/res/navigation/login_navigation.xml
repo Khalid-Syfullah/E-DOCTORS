@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/nav_login"
+    android:id="@+id/login_navigation">
+
+    <fragment android:id="@+id/nav_login"
+        android:name="com.incubationlab.edoctors_doctors.Login.ui.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login"
+        >
+        <action
+            android:id="@+id/action_nav_login_to_nav_registration"
+            app:destination="@id/nav_registration"
+            app:popUpTo="@id/nav_registration"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_reset_pass"
+            app:destination="@id/nav_reset_pass"
+            app:popUpTo="@id/nav_reset_pass"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_mobile_verification"
+            app:destination="@id/nav_mobile_verification"
+            app:popUpTo="@id/nav_mobile_verification"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment android:id="@+id/nav_registration"
+        android:name="com.incubationlab.edoctors_doctors.Login.ui.RegisterFragment"
+        android:label="Registration"
+        tools:layout="@layout/fragment_register"
+        >
+        <action
+            android:id="@+id/action_nav_registration_to_nav_login"
+            app:destination="@id/nav_login"
+            app:popUpTo="@id/nav_login"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:id="@+id/nav_mobile_verification"
+        android:name="com.incubationlab.edoctors_doctors.Login.ui.MobileVerificationFragment"
+        android:label="Mobile Verification"
+        tools:layout="@layout/fragment_mobile_verification"
+        >
+
+        <action
+            android:id="@+id/action_nav_mobile_verification_to_nav_registration"
+            app:destination="@id/nav_registration"
+            app:popUpTo="@id/nav_registration"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_mobile_verification_to_nav_login"
+            app:destination="@id/nav_login"
+            app:popUpTo="@id/nav_login"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment android:id="@+id/nav_reset_pass"
+        android:name="com.incubationlab.edoctors_doctors.Login.ui.ResetPasswordFragment"
+        android:label="Mobile Verification"
+        tools:layout="@layout/fragment_reset_password"
+        >
+
+        <action
+            android:id="@+id/action_nav_reset_pass_to_nav_login"
+            app:destination="@id/nav_login"
+            app:popUpTo="@id/nav_login"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_reset_pass_to_nav_mobile_verification"
+            app:destination="@id/nav_mobile_verification"
+            app:popUpTo="@id/nav_mobile_verification"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>

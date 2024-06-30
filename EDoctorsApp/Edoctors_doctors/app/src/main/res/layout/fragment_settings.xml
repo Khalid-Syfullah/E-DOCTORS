@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.ui.Settings.SettingsFragment">
+
+    <TextView
+        android:id="@+id/title_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Settings"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+
+        android:textColor="@color/red_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/label_max_lim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Maximum Patients(offline)"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_max_lim_offline"
+        app:layout_constraintEnd_toStartOf="@+id/tv_max_lim_offline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_max_lim_offline" />
+
+    <TextView
+        android:id="@+id/tv_max_lim_offline"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/tv_box_background"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:text="50"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="@+id/ivFirstNameEdit"
+        app:layout_constraintTop_toBottomOf="@+id/title_settings" />
+
+    <ImageView
+        android:id="@+id/ivFirstNameEdit"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+
+        android:layout_marginEnd="32dp"
+        android:src="@drawable/edit"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_max_lim_offline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_max_lim_offline" />
+
+    <TextView
+        android:id="@+id/label_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Mark Yourself available"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_status"
+        app:layout_constraintEnd_toStartOf="@+id/tv_max_lim_offline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/switch_status" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivFirstNameEdit"
+        app:layout_constraintStart_toStartOf="@+id/tv_max_lim_offline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_max_lim_offline" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

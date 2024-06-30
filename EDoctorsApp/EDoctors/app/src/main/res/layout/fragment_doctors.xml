@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/doctors_motion_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_doctors_scene">
+
+
+    <include
+        android:id="@+id/appbarIncluded"
+        layout="@layout/appbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/selected_dept_container"
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+
+        android:background="@color/red_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/selected_dept_image"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+
+
+        android:src="@drawable/icon_doctor"
+
+        app:layout_constraintBottom_toBottomOf="@+id/choose_department_Textview"
+        app:layout_constraintEnd_toStartOf="@+id/choose_department_Textview"
+        app:layout_constraintTop_toTopOf="@+id/choose_department_Textview"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/choose_department_Textview"
+        style="@style/Widget.AppCompat.DropDownItem.Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Department"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/selected_dept_container"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbarIncluded" />
+
+    <EditText
+        android:id="@+id/search_doctor_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp"
+        android:hint="Enter doctor name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selected_dept_container" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/doctor_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_doctor_name"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <include
+        android:id="@+id/choose_departments_layout"
+        layout="@layout/choose_department"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbarIncluded" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
