@@ -1,6 +1,5 @@
-# E-DOCTORS Mobile Telemedicine Platform for Android
+# E-DOCTORS
  E-DOCTORS: Mobile Telemedicine Platform for Android
-# E-DOCTORS+
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -14,7 +13,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/khalid-syfullah/e-doctors">
-    <img src="xd exports/Logo_Red.svg" alt="Logo" width="256" height="256">
+    <img src="xd-exports/Logo_Red.svg" alt="Logo" width="256" height="256">
   </a>
  
 
@@ -23,8 +22,7 @@
   <p align="center">
      E-DOCTORS: Mobile Telemedicine Platform for Android
 
-    <br />
-    <a href="https://play.google.com/store/apps/details?id=com.ece.cov19"><strong>Download App for Android</strong></a>
+  
     <br />
     <br />
     <a href="https://www.youtube.com/watch?v=5m7xHHdIbIc">Video Tutorial</a>
@@ -75,43 +73,51 @@ E-DOCTORS: It is designed for Bangladeshi Users. This project is designed as a m
   <br>
   <br>
   <br>
-  <img src="xd exports/E-Doctors.png" alt="Logo" width="640" height="850">
-  <br>
-  <br>
-  <br>
-  <br>
-  <img src="xd exports/E-Medicine.png" alt="Logo" width="640" height="850">
-  <br>
-  <br>
-  <br>
-  <br>
-  <img src="xd exports/Medspire Banner A4.png" alt="Logo" width="640" height="850">
+  <img src="xd-exports/E-Doctors.png" alt="Logo" width="640" height="850">
   <br>
   <br>
   <br>
   <br>
 
-  <img src="xd exports/1.jpg" alt="Logo" width="180" height="360">
-  <img src="xd exports/2.jpg" alt="Logo" width="180" height="360">
-  <img src="xd exports/3.jpg" alt="Logo" width="180" height="360">
+
+  <img src="xd exports/1.png" alt="Logo" width="180" height="360">
+  <img src="xd exports/2.png" alt="Logo" width="180" height="360">
+  <img src="xd exports/3.png" alt="Logo" width="180" height="360">
   <br>
   <br>
-  <img src="xd exports/4.jpg" alt="Logo" width="180" height="360">
-  <img src="xd exports/5.jpg" alt="Logo" width="180" height="360">
-  <img src="xd exports/6.jpg" alt="Logo" width="180" height="360">
-  <img src="xd exports/7.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/4.png" alt="Logo" width="180" height="360">
+  <img src="xd exports/5.png" alt="Logo" width="180" height="360">
+  <img src="xd exports/6.png" alt="Logo" width="180" height="360">
+  <img src="xd exports/7.png" alt="Logo" width="180" height="360">
 
   <br>
   <br>
-  <img src="xd exports/8.jpg" alt="Logo" width="180" height="360">
-  <img src="xd exports/9.jpg" alt="Logo" width="180" height="360">
-  <img src="xd exports/10.jpg" alt="Logo" width="180" height="360">
-  <img src="xd exports/11.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/8.png" alt="Logo" width="180" height="360">
+  <img src="xd exports/9.png" alt="Logo" width="180" height="360">
+  <img src="xd exports/10.png" alt="Logo" width="180" height="360">
+  <img src="xd exports/11.png" alt="Logo" width="180" height="360">
  
   <br>
   <br>
   <br>
- 
+  <br>
+   <img src="xd-exports/Medspire Banner A4.png" alt="Logo" width="640" height="850">
+
+  <br>
+  <br>
+  <br>
+  <br>
+   <img src="xd-exports/E-Medicine.png" alt="Logo" width="640" height="850">
+  <br>
+  <br>
+  <br>
+  <br>
+     <img src="xd-exports/Plasma+.png" alt="Logo" width="640" height="850">
+  <br>
+  <br>
+  <br>
+  <br>
+
 
 </p>
 
@@ -221,4 +227,4 @@ Project Link: [https://github.com/khalid-syfullah/e-doctors](https://github.com/
 [license-url]: https://github.com/khalid-syfullah/e-doctors/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/static/v1?label=LinkedIn&message=Khalid-Syfullah&logo=linkedin
 [linkedin-url]: https://bd.linkedin.com/in/khalid-syfullah
-[product-screenshot]: https://github.com/Khalid-Syfullah/PlasmaPlus/blob/master/app/src/main/res/drawable/splash.png
+[product-screenshot]: https://github.com/Khalid-Syfullah/E-Doctors/logo/Logo.png
