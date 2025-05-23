@@ -21,8 +21,6 @@
 
   <p align="center">
      E-DOCTORS: Mobile Telemedicine Platform for Android
-
-  
     <br />
     <br />
     <a href="https://www.youtube.com/watch?v=5m7xHHdIbIc">Video Tutorial</a>
@@ -32,6 +30,9 @@
     <a href="https://www.facebook.com/medspirebd">Facebook Page</a>
   </p>
 </p>
+
+
+
 
 
 
