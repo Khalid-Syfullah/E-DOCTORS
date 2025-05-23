@@ -80,22 +80,22 @@ E-DOCTORS: It is designed for Bangladeshi Users. This project is designed as a m
   <br>
 
 
-  <img src="xd exports/1.png" alt="Logo" width="180" height="360">
-  <img src="xd exports/2.png" alt="Logo" width="180" height="360">
-  <img src="xd exports/3.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/1.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/2.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/3.png" alt="Logo" width="180" height="360">
   <br>
   <br>
-  <img src="xd exports/4.png" alt="Logo" width="180" height="360">
-  <img src="xd exports/5.png" alt="Logo" width="180" height="360">
-  <img src="xd exports/6.png" alt="Logo" width="180" height="360">
-  <img src="xd exports/7.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/4.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/5.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/6.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/7.png" alt="Logo" width="180" height="360">
 
   <br>
   <br>
-  <img src="xd exports/8.png" alt="Logo" width="180" height="360">
-  <img src="xd exports/9.png" alt="Logo" width="180" height="360">
-  <img src="xd exports/10.png" alt="Logo" width="180" height="360">
-  <img src="xd exports/11.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/8.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/9.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/10.png" alt="Logo" width="180" height="360">
+  <img src="xd-exports/11.png" alt="Logo" width="180" height="360">
  
   <br>
   <br>
