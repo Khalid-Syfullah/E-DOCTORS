@@ -205,7 +205,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@khalid_syfullah](https://twitter.com/khalid_syfullah) - khalidsyfullah@gmail.com
+Khalid Syfullah - [@khalid_syfullah](https://twitter.com/khalid_syfullah) - khalidsyfullah@gmail.com
 
 Project Link: [https://github.com/khalid-syfullah/e-doctors](https://github.com/khalid-syfullah/e-doctors)
 
