@@ -1,6 +1,6 @@
 # E-DOCTORS Mobile Telemedicine Platform for Android
  E-DOCTORS: Mobile Telemedicine Platform for Android
-# Plasma+
+# E-DOCTORS+
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/khalid-syfullah/e-doctors">
-    <img src="app/src/main/res/mipmap-hdpi/app_icon.png" alt="Logo" width="256" height="256">
+    <img src="xd exports/Logo_Red.svg" alt="Logo" width="256" height="256">
   </a>
  
 
@@ -71,28 +71,42 @@ E-DOCTORS: It is designed for Bangladeshi Users. This project is designed as a m
 
 <br />
 <p align="center">
-  <img src="screenshots/Featured.png" alt="Logo" width="640" height="360">
   <br>
   <br>
   <br>
   <br>
-  <img src="app/src/main/res/drawable/splash.png" alt="Logo" width="180" height="360">
-  <img src="screenshots/IMG_20200715_232505.jpg" alt="Logo" width="180" height="360">
-  <img src="screenshots/IMG_20200804_140228.jpg" alt="Logo" width="180" height="360">
-  <img src="screenshots/IMG_20200715_232441.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/E-Doctors.png" alt="Logo" width="640" height="850">
   <br>
   <br>
-  <img src="screenshots/IMG_20200804_140132.jpg" alt="Logo" width="180" height="360">
-  <img src="screenshots/IMG_20200715_232530.jpg" alt="Logo" width="180" height="360">
-  <img src="screenshots/IMG_20200804_140105.jpg" alt="Logo" width="180" height="360">
-  <img src="screenshots/IMG_20200804_135928.jpg" alt="Logo" width="180" height="360">
+  <br>
+  <br>
+  <img src="xd exports/E-Medicine.png" alt="Logo" width="640" height="850">
+  <br>
+  <br>
+  <br>
+  <br>
+  <img src="xd exports/Medspire Banner A4.png" alt="Logo" width="640" height="850">
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <img src="xd exports/1.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/2.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/3.jpg" alt="Logo" width="180" height="360">
+  <br>
+  <br>
+  <img src="xd exports/4.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/5.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/6.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/7.jpg" alt="Logo" width="180" height="360">
 
   <br>
   <br>
-  <img src="screenshots/IMG_20200804_140009.jpg" alt="Logo" width="180" height="360">
-  <img src="screenshots/IMG_20200804_140157.jpg" alt="Logo" width="180" height="360">
-  <img src="screenshots/IMG_20200804_140121.jpg" alt="Logo" width="180" height="360">
-  <img src="screenshots/IMG_20200804_140209.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/8.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/9.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/10.jpg" alt="Logo" width="180" height="360">
+  <img src="xd exports/11.jpg" alt="Logo" width="180" height="360">
  
   <br>
   <br>
